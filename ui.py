@@ -220,8 +220,8 @@ if st.session_state["show_metrics"]:
     else:
         st.markdown(f"**Model Performance Metrics for {neighbourhood}**")
         m1, m2, m3, m4 = st.columns(4)
-        m1.metric("RMSE $kWh/m^2/day$", f"{metrics['RMSE']}")
-        m2.metric("MAE $kWh/m^2/day$", f"{metrics['MAE']}")
+        m1.metric("RMSE ($kWh/m^2/day$)", f"{metrics['RMSE']}")
+        m2.metric("MAE ($kWh/m^2/day$)", f"{metrics['MAE']}")
         m3.metric("MAPE (%)", f"{metrics['MAPE']}")
         m4.metric("$R^2$", f"{metrics['$R^2$']}")
 
